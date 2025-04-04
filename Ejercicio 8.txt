@@ -1,0 +1,12 @@
+Elaborar un algoritmo que solicite el ingreso de una letra hasta que el operador ingrese un vocal.
+INICIO
+caracter_ingresado = ""
+es_vocal = 0
+HACER
+    mostrar "Por favor, ingrese una vocal: "
+    leer caracter_ingresado
+    SI caracter_ingresado == "a" O caracter_ingresado == "e" O caracter_ingresado == "i" O caracter_ingresado == "o" O caracter_ingresado == "u" ENTONCES
+        es_vocal = 1
+    FIN-SI
+HASTA es_vocal == 1
+FIN-PROGRAMA
