@@ -1,9 +1,12 @@
-Elabore un algoritmo para leer 3 números enteros diferentes entre sí y determinar el número mayor de los 3.
+﻿Elabore un algoritmo para leer 3 números enteros diferentes entre sí y determinar el número mayor de los 3.
 
 INICIO
 repetidos = 1
 MIENTRAS repetidos == 1
     mostrar "Por favor, ingrese 3 números distintos entre si"
+    n1 = 0
+    n2 = 0
+    n3 = 0
     leer n1
     leer n2
     leer n3
