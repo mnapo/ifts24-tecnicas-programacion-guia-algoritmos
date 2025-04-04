@@ -1,0 +1,17 @@
+Se tiene registrada la producción (en unidades) lograda por un operario a los largo de la semana (lunes a sábado). Elabore un algoritmo que nos diga si el operario recibirá incentivo por productividad, sabiendo que el promedio de producción mínima es de 100 unidades.
+
+INICIO
+PROM_PROD_MIN = 100
+leer prod_lun
+leer prod_mar
+leer prod_mie
+leer prod_jue
+leer prod_vie
+leer prod_sab
+promedio = (prod_lun + prod_mar + prod_mie + prod_jue + prod_vie + prod_sab) / 6
+SI promedio > PROM_PROD_MIN ENTONCES
+    mostrar "El operario recibirá el incentivo"
+SINO
+    mostrar "El operario no recibirá el incentivo"
+FIN-SI
+FIN-PROGRAMA
