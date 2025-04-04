@@ -1,0 +1,41 @@
+Elaborar un algoritmo para obtener el resultado del escrutinio en las elecciones del delegado escolar. Considerar que hay 160 electores y se han presentado 3 candidatos. Todos votaron, se declara el ganador por mayoría simple.
+
+INICIO
+CANT_ELECTORES = 160
+NOMBRE_1 = "Juana"
+NOMBRE_2 = "Marcos"
+NOMBRE_3 = "Pepito"
+candidato_1 = 0
+candidato_2 = 0
+candidato_3 = 0
+mostrar "Para cada votante, ingrese " + NOMBRE_1 + " / " + NOMBRE_2 + " / " + NOMBRE_3 + " según a quién votó"
+PARA i DESDE 1 HASTA CANT_ELECTORES INCREMENTO 1
+    voto_valido = 0
+    mostrar "Votante " + i + ": "
+    leer voto
+    MIENTRAS voto_valido = 0
+        SI voto == NOMBRE_1 O voto == NOMBRE_2 O voto == NOMBRE_3 ENTONCES
+            voto_valido = 1
+            SI voto == NOMBRE_1 ENTONCES
+                candidato_1 = candidato_1 + 1
+            SINO SI voto == NOMBRE_2 ENTONCES
+                candidato_2 = candidato_2 + 1
+            SINO
+                candidato_3 = candidato_3 + 1
+            FIN-SI
+            FIN-SI
+        SINO
+            mostrar "Ingrese un candidato válido"
+        FIN-SI
+    FIN-MIENTRAS
+FIN-PARA
+SI candidato_1 < candidato_2 ENTONCES
+    SI candidato_2 < candidato_3 ENTONCES
+        mostrar "El/la candidato/a ganador/a es " + NOMBRE_3
+    SINO
+        mostrar "El/la candidato/a ganador/a es " + NOMBRE_2
+    FIN-SI
+SINO
+        mostrar "El/la candidato/a ganador/a es " + NOMBRE_1
+FIN-SI
+FIN-PROGRAMA
