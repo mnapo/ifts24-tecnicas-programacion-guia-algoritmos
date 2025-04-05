@@ -1,0 +1,18 @@
+﻿START
+consonants = 0
+vowels = 0
+FOR i FROM 1 TO 10 INCREMENT 1
+    char = ""
+    read char
+    IF char == "a" OR char == "e" OR char == "i" OR char == "o" OR char == "u" THEN
+        vowels = vowels + 1
+    ELSE
+        IF char == "b" OR char == "c" ... THEN
+                consonants = consonants + 1
+            END-IF
+        END-IF
+    END-IF
+    show "# consonants: " + consonants
+    show "# vowels: " + vowels
+END-FOR
+END-PROGRAM

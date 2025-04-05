@@ -1,0 +1,11 @@
+START
+char = ""
+is_vowel = 0
+DO
+    show "Please, enter a vowel: "
+    read char
+    IF char == "a" OR char == "e" OR char == "i" OR char == "o" OR char == "u" ENTONCES
+        is_vowel = 1
+    FIN-IF
+UNTIL is_vowel == 1
+END-PROGRAM

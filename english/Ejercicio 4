@@ -1,0 +1,15 @@
+﻿START
+PROM_MIN_PROD = 100
+read (prod_mon = 0)
+read (prod_fri = 0)
+read (prod_sat = 0)
+read (prod_tue = 0)
+read (prod_thu = 0)
+read (prod_wed = 0)
+average = (prod_mon + prod_tue + prod_wed + prod_thu + prod_fri + prod_sat) / 6
+IF average > PROM_MIN_PROD THEN
+    show "The operary will receive the incentive."
+ELSE
+    mostrar "The operary will not receive the incentive."
+END-IF
+END-PROGRAM

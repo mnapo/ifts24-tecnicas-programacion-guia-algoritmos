@@ -1,0 +1,13 @@
+﻿START
+    N_MAX = 100
+    n1 = 0
+    n2 = 1
+    show n1
+    show n2
+    DO
+        n_temp = n2
+        n2 = n2 + n1
+        n1 = n_temp
+        show n2
+    UNTIL n2 == N_MAX
+END-PROGRAM

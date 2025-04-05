@@ -1,0 +1,17 @@
+﻿START
+LEGAL_AGE = 18
+TOTAL_PEOPLE = 200
+adults = 0
+children = 0
+FOR i FROM 1 TO TOTAL_PEOPLE INCREMENT 1
+    age = 0
+    read age
+    IF age >= LEGAL_AGE THEN
+        adults = adults + 1
+    ELSE
+        children = children + 1
+    END-IF
+END-FOR
+show "# adults: " + adults
+show "# children: " + children
+END-PROGRAM

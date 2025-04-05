@@ -1,0 +1,19 @@
+﻿Elaborar un algoritmo que nos permita ingresar 10 letras cualquiera y determine cuántas vocales y cuántas consonantes se ingresaron.
+
+INICIO
+consonantes = 0
+vocales = 0
+PARA i DESDE 1 HASTA 10 INCREMENTO 1
+    caracter_ingresado = ""
+    leer caracter_ingresado
+    SI caracter_ingresado == "a" O caracter_ingresado == "e" O caracter_ingresado == "i" O caracter_ingresado == "o" O caracter_ingresado == "u" ENTONCES
+        vocales = vocales + 1
+    SINO
+	SI caracter_ingresado == "b" O caracter_ingresado == "c" ... ENTONCES
+        	consonantes = consonantes + 1
+    	FIN-SI
+    FIN-SI
+    mostrar "# consonantes: " + consonantes
+    mostrar "# vocales: " + vocales
+FIN-PARA
+FIN-PROGRAMA

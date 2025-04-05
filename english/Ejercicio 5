@@ -1,0 +1,24 @@
+﻿START
+repeated = 1
+WHILE repeated == 1
+    show "Please, enter 3 numbers different between them:"
+    n1 = 0
+    n2 = 0
+    n3 = 0
+    read n1
+    read n2
+    read n3
+    IF n1 <> n2 AND n2 <> n3 AND n1 <> n3 THEN
+        repeated = 0
+    END-IF
+END-WHILE
+IF n1 < n2 THEN
+    IF n2 < n3 THEN
+        show "The biggest number is" + n3
+    ELSE
+        show "The biggest number is " + n2
+    END-IF
+ELSE
+    show "The biggest number is " + n1
+END-IF
+END-PROGRAM

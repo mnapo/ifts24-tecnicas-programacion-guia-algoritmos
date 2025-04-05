@@ -1,0 +1,20 @@
+﻿Elabora un algoritmo que solicite la edad de dos hermanos y muestre un mensaje indicando la edad del mayor y cuántos años de diferencia tiene con el menor.
+INICIO
+diferencia = 0
+edad_1 = 0
+edad_2 = 0
+leer edad_1
+leer edad_2
+SI edad_1 > edad_2 ENTONCES
+    diferencia = edad_1 - edad_2
+    mostrar "El hermano mayor tiene " + edad_1 + "años."
+SINO
+	SI edad_1 < edad_2 ENTONCES
+    		diferencia = edad_2 - edad_1
+    		mostrar "El hermano mayor tiene " + edad_2 + "años."
+	SINO
+    		mostrar "Ambos hermanos tienen la misma edad."
+	FIN-SI
+FIN-SI
+mostrar "La diferencia es de " + diferencia + "años."
+FIN-PROGRAMA

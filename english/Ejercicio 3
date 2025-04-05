@@ -1,0 +1,19 @@
+﻿START
+diff = 0
+age_1 = 0
+age_2 = 0
+read age_1
+read age_2
+IF age_1 > age_2 THEN
+    diff = age_1 - age_2
+    show "The older brother is " + age_1 + "years old."
+ELSE
+	IF age_1 < age_2 THEN
+    		diff = age_2 - age_1
+    		show "The older brother is " + age_2 + "years old."
+	ELSE
+    		show "Both brothers are the same years old."
+	END-IF
+END-IF
+show "The difference is of " + diff + "years."
+END-PROGRAM
