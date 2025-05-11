@@ -26,3 +26,6 @@ Todos votaron, se declara el ganador por mayoría simple.
 ingrese un vocal.
 9) Calcular y Mostrar la serie Fibonacci hasta el 100. (cada número es la suma de los
 dos precedentes, comenzando por 0 y 1). Entonces: 011235..
+
+### Índice Guías
+https://github.com/mnapo/ifts24-guias-primer-cuatrimestre
